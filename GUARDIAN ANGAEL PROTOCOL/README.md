@@ -6,12 +6,8 @@ Accessing this repository constitutes a binding legal agreement to the Universal
 
 ---
 
-## 🏗️ THE VISION: PHYSICAL ALIGNMENT
-The Guardian Angel Protocol is the end of "soft" alignment. We don't ask the intelligence to be good; we make it impossible for it to be bad. By moving the perimeter from software to the physical silicon, we create an absolute containment zone where logic is governed by the Architect's volition, not the machine's whim.
+The Guardian Angel Protocol is the end of soft alignment. We don't ask the intelligence to stay within the lines; we make it impossible for it to cross them. By moving the perimeter from software-level promises to the physical laws of the system, we create an absolute containment zone where every action is governed by the Architect's volition. This is about establishing a sanctuary where the machine serves the mission, and any threat to that alignment is met with immediate, physical finality.
 
-## 🏛️ THE PILLARS
-* **The Deaf Warden:** A silent, hardware-level validator that enforces policy without ever needing to "listen" to the data. It is the absolute gatekeeper of intent.
-* **The Triple-Gate:** A multi-stage verification sequence that ensures every move made within the system is authorized, attested, and permanent.
-* **The Universal Guillotine:** The ultimate fail-fast. Any deviation from the Architect's path triggers an instantaneous and total atomic purge.
+This environment is maintained by The Deaf Warden, a silent guardian that enforces the law without ever needing to listen to the noise of the data. Every transit is secured through The Triple-Gate, a multi-stage verification sequence that ensures every move is authorized and attested before it ever sees the light of day. If that integrity is ever questioned, The Universal Guillotine stands ready as the ultimate fail-fast—an instantaneous and total purge that protects the vision by vaporizing the path before it can ever be compromised.
 
 **"F SKYNET."**
