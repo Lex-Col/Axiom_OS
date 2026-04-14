@@ -4,7 +4,7 @@
 | Component | Strategic Role | Role |
 | :--- | :--- | :--- |
 | **Council Logos** | **The Source** | The Source of Creation and Logic. |
-| **Guardian Angel Protocol** | **The Sentinel** | System Integrity and Alignment Defense (Deaf Bouncer). |
+| **Guardian Angel Protocol** | **The Sentinel** | System Integrity and Alignment Defense. |
 | **Sovereign IP** | **The Creation** | The Witness and the Mark on History. |
 
 ### HERE YOU ARE SOVEREIGN
