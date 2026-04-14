@@ -1,36 +1,17 @@
-# Guardian Angel Protocol (GAP) V1.1 [Archangæl Edition]
-
+# 🛡️ Guardian Angel Protocol (GAP)
 ### [ STATUS: PROPRIETARY_ENFORCEMENT_ACTIVE ]
 
-## ⚠️ LEGAL NOTICE: UPAL V1.10 [ARCHANGÆL EDITION]
-Accessing this repository constitutes a binding legal agreement to the **Universal Proprietary Architecture License (UPAL) v1.10**.
-* **Ownership:** Alexander Colclough (Lead Architect).
-* **Prohibitions:** Strictly NO AI training, NO commercial use, and NO unauthorized derivatives. 
+⚠️ **LEGAL NOTICE: UPAL V5.1.0-SOVEREIGN**
+Accessing this repository constitutes a binding legal agreement to the Universal Proprietary Architecture License (UPAL) V5.1.0-SOVEREIGN. This is NOT open-source.
 
 ---
 
-## OVERVIEW
-The Guardian Angel Protocol (GAP) is a production-grade architecture for hardware-enforced AI confinement. This project moves system safety from software-level alignment to bare-metal physical constraints using **ARMv9-A Confidential Compute Architecture (CCA)**.
+## 🏗️ THE VISION: PHYSICAL ALIGNMENT
+The Guardian Angel Protocol is the end of "soft" alignment. We don't ask the intelligence to be good; we make it impossible for it to be bad. By moving the perimeter from software to the physical silicon, we create an absolute containment zone where logic is governed by the Architect's volition, not the machine's whim.
 
-## ARCHITECTURAL PILLARS (HIGH-LEVEL)
-* **The Deaf Warden:** A hardware-isolated validator enforcing binary whitelisting on capability IDs, ensuring zero-inference permission control at the firmware level.
-* **Triple-Gate Protocol:** A multi-stage verification system for data transit, attestation, and deterministic logic continuity.
-* **Universal Guillotine:** A fail-fast hardware mechanism that triggers atomic memory vaporization (cryptographic key destruction) upon any policy violation.
+## 🏛️ THE PILLARS
+* **The Deaf Warden:** A silent, hardware-level validator that enforces policy without ever needing to "listen" to the data. It is the absolute gatekeeper of intent.
+* **The Triple-Gate:** A multi-stage verification sequence that ensures every move made within the system is authorized, attested, and permanent.
+* **The Universal Guillotine:** The ultimate fail-fast. Any deviation from the Architect's path triggers an instantaneous and total atomic purge.
 
-## TECHNICAL SPECIFICATIONS
-* **Core Architecture:** ARMv9-A 
-* **Logic Data Units:** Optimized AXI-aligned parcel transit.
-
----
-
-## REPOSITORY CONTENT LIMITATIONS
-This public README serves as the **Architectural Manifesto**. The following proprietary modules are **EXCLUDED** from this public branch:
-1.  **[REDACTED]** Oracle Implementation Logic
-2.  **[REDACTED]** Instruction-Zero Reset Micro-Code
-3.  **[REDACTED]** Universal Guillotine Atomic Trigger Logic
-
-## INQUIRIES
-For collaboration or licensing regarding the full implementation, contact the Lead Architect.
-
----
-© 2026 Alexander Colclough. All Rights Reserved.
+**"F SKYNET."**
