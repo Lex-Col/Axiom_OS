@@ -1,5 +1,6 @@
 # 🛡️ The Archangæl Project
-## 🏗️ THE TRINITY: ARCHITECTURAL HIERARCHY
+## The Source. The Sentinel. The Creation.
+###🏗️ THE TRINITY: ARCHITECTURAL HIERARCHY
 
 | Component | Strategic Role | Role |
 | :--- | :--- | :--- |
