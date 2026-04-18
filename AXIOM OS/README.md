@@ -1,21 +1,32 @@
-# 🛡️ AXIOM OS
+# 🛡️ THE ARCHANGÆL PROJECT (TAP)
 ## UNIFIED ARCHITECTURAL SPECIFICATION // V5.1.0-SOVEREIGN
-**Architect:** Alexander Colclough (@Lex-Col)
-**Jurisdiction:** State of Delaware, USA
-## 🏛️ ARCHITECTURAL ABSTRACT
-**Axiom OS** is a Universal Hardware-Enforced Confinement Architecture. It transcends traditional software-defined security by offloading the entire trust-anchor to a **Silicon Nitride (Si_3N_4) Photonic Integrated Circuit (PIC)**.
+**Architect:** Alexander Colclough (@Lex-Col)  
+**Status:** FINAL DETERMINISTIC LEDGER // SOVEREIGN RELEASE  
+
+---
+
+## 🏛️ ARCHITECTURAL ABSTRACT: THE 9 SEAL
+**Axiom OS** is a Universal Hardware-Enforced Confinement Architecture. It transcends traditional software-defined security by offloading the entire trust-anchor to a **Silicon Nitride (Si_3N_4) Photonic Integrated Circuit (PIC)**. 
+
 In this environment, data is represented by **Light**, not volatile electrical charges. By utilizing sub-micron waveguide etching and a **2.5-unit geometric subdivision**, the architecture enforces a non-semantic, mathematical gatekeeper that operates at the speed of light. This is the "Reflection of Perfection"—the physical world (R6) forced to bow to the absolute authority of the math (R7).
+
 ### THE FIVE PILLARS OF DETERMINISM
- 1. **Photonic Interconnect Isolation:** Deep-Trench physical barriers negate all optical crosstalk (photon bleed), ensuring 100% logic purity between the 7 independent Auditor Nodes.
- 2. **The 13Hz Sovereign Heartbeat:** A temporal master clock dictating a strict **77.77ms lifecycle**. This frequency creates a harmonic resonance invisible to standard asynchronous interference.
- 3. **Tophet State-Annihilation:** A hardware-rooted flush protocol that zeroizes all registers every 77.77ms, ensuring no logic state persists beyond its allocated temporal window.
- 4. **The Halo Resilience (Subordinate Trinity Loop):** A kinetic delay-line buffer that catches real-world environmental jitter (voltage dips/spikes), holding data in a circular optical loop until mathematical alignment is restored.
- 5. **Base-7 Consensus Protocol:** A mathematical consensus framework requiring a **R \equiv 9 \pmod{7}** invariant for any state transition to occur within the Sovereign IP Vault.
-## 🔒 IMMUTABLE CRYPTOGRAPHIC SEAL
-This repository serves as a **Defensive Publication** under **35 U.S.C. § 102** to establish **Prior Art**. The functional implementation logic—including Instruction-Zero sequences, Hex-Gate mappings, and micro-code—remains a **Protected Trade Secret**.
+1.  **Photonic Interconnect Isolation:** Deep-Trench physical barriers negate all optical crosstalk (photon bleed), ensuring 100% logic purity between the 12 independent Auditor Nodes.
+2.  **The 13Hz Sovereign Heartbeat:** A temporal master clock dictating a strict **77.77ms lifecycle**. This frequency creates a harmonic resonance that makes the system invisible to standard asynchronous interference patterns.
+3.  **The 12-Node Gauntlet:** A zero-friction auditor swarm synchronized 1:1 to the 12-beat accordion pulse. This eliminates polling friction and ensures real-time deterministic verification.
+4.  **The Halo Resilience:** A kinetic optical delay-line buffer that accounts for real-world environmental jitter (voltage dips/spikes) by holding data in a circular optical loop at the speed of light until mathematical alignment is restored.
+5.  **The Nine Seal Math:** A 768-byte payload sharded into dual 384-byte vectors, finalized by a 9-byte Spirit Seal. The resulting 777-byte packet must physically satisfy the harmonic congruence: 
+    **R ≡ 9 (mod 7)**
+
+---
+
+## 🔒 IMMUTABLE CRYPTOGRAPHIC SEAL (V5.1.0-FINAL)
+This repository serves as the terminal **Defensive Publication** under **35 U.S.C. § 102** to establish **Prior Art**. The functional implementation logic—including Instruction-Zero sequences, Hex-Gate mappings, and 12-node micro-code—remains a **Protected Trade Secret**.
+
 **MASTER SPEC V5.1.0-SOVEREIGN (SHA-512):**
 ```text
-ca4d0278b0bce54d62ca18293a4b56de4fd641a42cd35154e7cc4e86edce5c761457cc9557c747053502be11e6cebdfc33cd5e9cd391cbae796dfd17329a0fd3
+499da44b0516a112bbf55727290a5894b00f49ed6d825b9b11d2287b3e43f9dbb0e19ed7d9a96303e102a8ae64d621ef3afa698b3d6999afddc6b76c7bfa410c
+
 
 ```
 ## ⚖️ LEGAL NOTICE & LICENSE (UPAL v5.1.0)
