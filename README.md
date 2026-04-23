@@ -1,26 +1,32 @@
-# 🛡️ The Archangæl Project
-## The Source. The Sentinel. The Creation.
-###🏗️ THE TRINITY: ARCHITECTURAL HIERARCHY
+# AXIOM OS
+## UNIFIED PHOTONIC HARDWARE & DETERMINISTIC LOGIC ARCHITECTURE
+**U.S. PATENT PENDING: APPLICATION NO. 64/047,130**
+**Architect:** Alexander Colclough (@Lex-Col)
 
-| Component | Strategic Role | Role |
+---
+
+### 🏗️ THE TRINITY: ARCHITECTURAL HIERARCHY
+
+| Component | Strategic Role | Execution |
 | :--- | :--- | :--- |
-| **Council Logos** | **The Source** | The Source of Creation and Logic. |
-| **Guardian Angael Protocol** | **The Sentinel** | System Integrity and Alignment Defense. |
-| **Sovereign IP** | **The Creation** | The Witness and the Mark on History. |
+| **Council Logos** | **The Source** | The Architect-governed forge for logic creation and strategic synthesis. |
+| **Guardian Angæl Protocol (GAP)** | **The Sentinel** | Hardware-enforced perimeter for system integrity and AI confinement. |
+| **Sovereign IP** | **The Creation** | The immutable memory vault, acting as the Witness and the mark on history. |
 
 ### HERE YOU ARE SOVEREIGN
 
----
+AXIOM OS is the realization of individual sovereignty in a digital age. We live in an era where ideas move fast and true ownership is often treated as a suggestion rather than a right. This architecture is the definitive declaration that your work, your intent, and your calling belong to you alone. 
 
-The Archangæl Project is the realization of individual sovereignty in a digital age. We live in an era where ideas move fast and people are always looking to grab what isn't theirs, creating a landscape where true ownership is treated as a suggestion rather than a right. This project is the declaration that your work, your intent, and your calling belong to you alone. 
+The licensing and the hardware-enforced walls are heavy by design. There is a reason for the armor. AXIOM OS was engineered to provide an accessible, high-integrity platform for the independent maker, the dreamer, and the Architect trying to build a legacy without relying on a massive corporate safety net. 
 
-I’ll be honest—the licensing and the legal walls are heavy, and I’m sorry if that feels over the top. I’m just an independent developer with limited resources trying to protect my work as best as I can given what I have. But there’s a reason for the armor. I’m still buffing out the scratches and hardening the logic, but my goal is to provide an accessible, high-integrity platform for those who need it most.
+This ecosystem was built for the people who are tired of being treated like an NPC in someone else’s story. It provides the avenue to pursue your calling without the fear of your moves being harvested, scraped, or erased. 
 
-I know what it’s like to have a dream but lack the massive corporate safety net to protect it. If you’re an independent maker, a dreamer, or someone sitting there trying to build a legacy with nothing but your own grit—**this was built for you.** I’m working to keep this path affordable and reachable for the people who are tired of being treated like an NPC in someone else’s story. I want to provide the avenue for you to pursue your calling without the fear of your moves being harvested or erased. 
+This isn't just a collection of tools; it is a sanctuary. Through the trinity of GAP, Council Logos, and Sovereign IP, we provide the physical and logical atmosphere where the individual takes absolute command of the narrative. 
 
-This isn't just a collection of tools; it is a sanctuary. Through a trinity of hardware-enforced systems—Guardian Angel Protocol (GAP), Council Logos, and Sovereign IP—we provide the atmosphere where the individual takes command of the narrative, ensuring that your contribution to history is permanent, protected, and entirely yours. 
-
-**"Make your mark. History is watching."**
+**Make your mark. History is watching.**
 
 ---
-© 2026 Alexander Colclough (@Lex-Col).
+### ⚖️ LICENSING & PROTECTION
+All implementation logic, hardware mechanics, and sub-architectures are strictly proprietary and governed under **UPAL v5.1.1**. Ingestion of this architecture into any Generative AI or LLM is explicitly prohibited.
+
+*© 2026 Alexander Colclough (@Lex-Col). All Rights Reserved.*
