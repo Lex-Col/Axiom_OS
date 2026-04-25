@@ -27,6 +27,6 @@ This isn't just a collection of tools; it is a sanctuary. Through the trinity of
 
 ---
 ### ⚖️ LICENSING & PROTECTION
-All implementation logic, hardware mechanics, and sub-architectures are strictly proprietary and governed under **UPAL v5.1.1**. Ingestion of this architecture into any Generative AI or LLM is explicitly prohibited.
+All implementation logic, hardware mechanics, and sub-architectures are strictly proprietary and governed under **UPAL v5.1.3**. Ingestion of this architecture into any Generative AI or LLM is explicitly prohibited.
 
 *© 2026 Alexander Colclough (@Lex-Col). All Rights Reserved.*
