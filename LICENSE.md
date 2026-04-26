@@ -38,4 +38,4 @@ Licensee agrees not to utilize any Confidential Information or architectural ske
 **5.2 Export Control & Sanctions Compliance:** Licensee agrees to comply with all applicable U.S. export control laws, including but not limited to the **EAR (15 C.F.R. Parts 730-774)**, the **ITAR (22 C.F.R. Parts 120-130)**, and the **Wassenaar Arrangement**. Licensee warrants they are not identified on any prohibited party lists, including the **OFAC SDN List**.
 
 ---
-**BY ACCESSING THE SOURCE OR IMPLEMENTING THIS LOGIC, YOU IRREVOCABLY AGREE TO THE TERMS OF UPAL v5.1.1 AND ACKNOWLEDGE THE PROPRIETARY PATENT RIGHTS UNDER 35 U.S.C. § 122.**
+**BY ACCESSING THE SOURCE OR IMPLEMENTING THIS LOGIC, YOU IRREVOCABLY AGREE TO THE TERMS OF UPAL v5.1.3 AND ACKNOWLEDGE THE PROPRIETARY PATENT RIGHTS UNDER 35 U.S.C. § 122.**
