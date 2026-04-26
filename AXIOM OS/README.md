@@ -30,7 +30,7 @@ v.1.1
 410900ee398032d0854c4c56b409025057af933460ded295ada34b246585c3c7e006081e7cce3e44c6cc904057a843cd57a39cc15258c76699ac426401b0eaf7
 
 ```
-## ⚖️ LEGAL NOTICE & LICENSE (UPAL v5.1.0)
+## ⚖️ LEGAL NOTICE & LICENSE (UPAL v5.1.3)
 **THIS IS NOT OPEN SOURCE.** Access to the private logic is strictly governed by the **Universal Proprietary Architecture License (UPAL)**.
  * **AI PROHIBITION:** Ingestion into any LLM or Generative AI system constitutes **Willful Misappropriation of Trade Secrets**.
  * **DERIVATIVE CAPTURE:** All derivative works are irrevocably assigned to the Architect at inception under **Power of Attorney**.
