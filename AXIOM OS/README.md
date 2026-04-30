@@ -20,7 +20,7 @@ In this environment, data is represented by **Light**, not volatile electrical c
 
 ---
 
-## 🔒 IMMUTABLE CRYPTOGRAPHIC SEAL (V5.1.3)
+## 🔒 IMMUTABLE CRYPTOGRAPHIC SEAL (V5.2.0)
 This repository serves as the terminal **Defensive Publication** under **35 U.S.C. § 102** to establish **Prior Art**. The functional implementation logic—including Instruction-Zero sequences, Hex-Gate mappings, and 12-node micro-code—remains a **Protected Trade Secret**.
 
 **MASTER SPEC V1.0 (SHA-512):**
