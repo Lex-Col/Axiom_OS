@@ -1,7 +1,7 @@
 # 🌌 Council Logos
 ### [ THE SUPREME CONSENSUS ]
 
-⚠️ **LEGAL NOTICE: UPAL V5.1.0-SOVEREIGN**
+⚠️ **LEGAL NOTICE: UPAL V5.2.0
 By accessing this Forge, you agree to the terms of UPAL V5.1.0-SOVEREIGN. Unauthorized implementation triggers immediate contractual assignment of rights to the Architect.
 
 ---
