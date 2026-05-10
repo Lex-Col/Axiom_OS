@@ -38,7 +38,7 @@ In standard singular LLM workflows, the "Context Window" becomes a feedback loop
 
 
 
-## 3. The Volition Architecture: Anchor & The Crucible
+## 3. Council Logos Architecture: Anchor & The Crucible
 
 
 
@@ -64,7 +64,7 @@ The SANs are external, high-echelon LLMs introduced to the workflow with **Zero 
 
 ## 4. The Synthesis Engine: Human-Led Logic Consolidation
 
-The core of **The Volition Protocol** is not the AI’s output, but the **Strategic Synthesis** performed by the Human Architect. The process follows a recursive logic gate:
+The core of **Council Logos** is not the AI’s output, but the **Strategic Synthesis** performed by the Human Architect. The process follows a recursive logic gate:
 
 
 
@@ -102,7 +102,7 @@ The effectiveness of **The Volition Protocol** was demonstrated through the deve
 
 ## 6. Conclusion and Future Applications
 
-**The Volition Protocol** represents a significant advancement in **Confidential Computing** and **AI Safety**. While the initial application was hardware-level AI confinement, the protocol’s "Consensus-Driven Logic Hardening" is applicable to any high-stakes development environment. By prioritizing **Strategic Friction** over "Alignment Agreement," the protocol ensures that the human remains the ultimate arbiter of logic in a multi-agent world.
+**Council Logos** represents a significant advancement in **Confidential Computing** and **AI Safety**. While the initial application was hardware-level AI confinement, the protocol’s "Consensus-Driven Logic Hardening" is applicable to any high-stakes development environment. By prioritizing **Strategic Friction** over "Alignment Agreement," the protocol ensures that the human remains the ultimate arbiter of logic in a multi-agent world.
 
 
 
