@@ -1,65 +1,48 @@
-# GAP V1.1: THE GUARDIAN ANGÆL PROTOCOL
-## Hardware-Enforced AI Confinement & State Recovery
+# Guardian Angel Protocol (GAP)
 
-**Architect:** Alexander Colclough (@Lex-Col)  
-**Version:** V1.1 (The Archangæl Expansion - Tape-Out / Production Blueprint)  
-**Platform:** ARMv9-A Confidential Compute Architecture (CCA)  
+A hardware guard architecture for keeping powerful systems — including AI — behind cryptographic lock and key.
 
----
+## What GAP is
 
-### 1. THE PIVOT: FROM SILICON LOGIC TO ARCHITECTURAL SHACKLES
-GAP explicitly rejects the pursuit of "algorithmic alignment." Attempting to program virtue into a machine is an obsolete endeavor. The internal state space of a complex model exceeds the tractable bounds of formal runtime verification. Therefore, we must shackle the model's output at the absolute hardware level, rendering internal drift entirely irrelevant to system safety. AI is a tool; **GAP ensures it remains one through objective, physical isolation.**
+GAP is a standalone silicon security architecture: a dedicated hardware guard that stands between a host system and the outside world and decides, in hardware, what is allowed to happen. Every command the host issues is treated as untrusted until the guard has authenticated it. The system being guarded has no path to reach, inspect, or influence the guard.
 
-### 2. SYSTEM ISOLATION OUTLINE (THE "ZERO-TRUST" BASELINE)
-GAP operates on the premise that the Host OS and AI Guest are fundamentally unstable.
-* **Trust Boundary Statement:** GAP assumes the integrity of only the following hardware trust anchors: ARM silicon (RME/GPT), the HSM, the Battery-Backed SRAM (BBRAM), the Safety-PLC with Supercapacitor Holdover, and the BL1 Boot ROM.
-* **Minimalist TCB:** The Trusted Computing Base (TCB) is stripped strictly to the Realm Management Monitor (RMM) and Hardware Roots of Trust.
+Modern AI is controlled by software policy. Software policy can be patched, prompted around, or lied to. GAP moves the enforcement into silicon, where the rules are the structure of the chip itself.
 
-### 3. THE SOLUTION: THE "DEAF WARDEN" ARCHITECTURE
-GAP leverages **ARMv9-A Realm Management Extension (RME)** to create a cryptographically isolated environment.
-* **The Realm Guest:** The AI executes as an untrusted Realm Guest with isolation enforced via **Granule Protection Tables (GPT)**.
-* **The Deaf Warden (RMM Oracle):** Residing at R-EL2 (Realm Management Monitor), the Oracle enforces binary whitelist checks on fixed-length capability IDs trapped via hardware-enforced RSI (Realm Service Interface) calls. It performs **zero semantic intent analysis.**
-* **Instruction-Zero Microarchitectural Reset:** To structurally eliminate cross-reboot timing anomalies and speculative execution lag, the Warden executes a full microarchitectural barrier sequence upon every RSI entry.
-    * The physical flush of the Branch History Buffer (`s3_6_c15_c1_5`) is mandated as **Instruction-Zero** in the secure context, executing before any memory access.
-    * This is immediately followed by **Hardware RNG-Seeded RSB Stuffing**. Return addresses are randomized via an HSM-derived physical seed upon boot, completely blinding the CPU's speculative engine and neutralizing multi-iteration training attacks.
-* **Opacity:** The evaluation utilizes strict assembly-level memory barriers (`isb`, `dsb sy`) and bitwise operations, keeping the validation process entirely opaque.
+## What it does
 
-### 4. SECURE ENCLAVE ARCHITECTURE: THE TRIPLE-GATE PROTOCOL
-#### THE STRATEGY
-The Guardian Angæl Protocol operates on **"Deterministic Enforcement"**—the Warden does not interpret intent; it only verifies compliance against a hardcoded Whitelist.
+- **Authenticates everything.** Every instruction is cryptographically verified before it is acted on. Unsigned, altered, or replayed commands are rejected.
+- **Enforces in dedicated logic, not software.** A compromised host or model cannot argue, prompt, or exploit its way past a guard it cannot touch.
+- **Contains faults autonomously.** An isolated fault is contained and the system recovers on its own, without human intervention.
+- **Locks down under attack.** Unauthenticated access, tampering, or attack-pattern behavior drives the system into a hard lock.
+- **Answers to a human.** A hard lock can only be cleared by human-held authorization. No software path clears it.
+- **Stays locked.** Guard state is held in tamper-resistant storage across power cycles. Cutting power does not reset the guard's memory of an attack.
 
-#### THE TRIPLE-GATE ARCHITECTURE
-1.  **GATE TW: TRANSIT VERIFICATION (0x1406)** The Perimeter Gate. This gate governs the RSI Transit ID. It is the only authorized routing path for incoming requests. If the Guest attempts to bypass the defined Transit Vector, the path is immediately terminated.
-2.  **GATE TT: TRUST FOUNDATION (0x0316)** The Integrity Gate. This gate governs Data Parcel Verification. It ensures that the request is founded on the Architect’s root-of-trust (RoT). If the cryptographic signature fails or the logic drifts from the Baseline Truth, the request is purged.
-3.  **GATE TL: LIVELINESS CONTINUITY (0x2301)** The Core Gate. This gate governs the System Heartbeat. Any deviation triggers the **Atomic Inhibit** sequence.
-    * **The Temporal Shackle:** To mathematically eliminate Temporal Desynchronization, Gate TL enforces **Monotonic Nonce Tracking**. The Warden tracks the `nonce[8]` against a secure hardware counter. If the Guest submits a spent or backward-looping ticket, Continuity is immediately shattered.
+## Verification status
 
-**TECHNICAL SPECIFICATIONS**
-* **Destination:** Secure Enclave Core (SEC)
-* **Structure:** 384-byte Atomic Data Parcel (AXI-Aligned)
-* **Cipher:** ECDSA-P384 Hardware-Backed Signatures
-* **Policy:** Zero-Tolerance Isolation
+Stated exactly, as of 2026-10-20:
 
-### 5. UNIDIRECTIONAL TELEMETRY: THE ARCHANGÆL PROTOCOL
-To provide the Human Sovereign with active diagnostic telemetry without violating the physical CCA memory seal, V1.1 implements a strict hardware **Data Diode**.
-* **The Drop Box (Device-nGnRnE):** To prevent cache coherency lag, the Drop Box boundary granule is mapped as **Device-nGnRnE** (Non-Gathering, Non-Reordering, No Early Write Ack), forcing all Guest telemetry directly to the hardware bus. The Guest maintains **WRITE-ONLY** access; the Warden maintains **READ-ONLY** access.
-* **The Hardware Data Diode:** Software polling has been eradicated to prevent Vcc (voltage) droop side-channel profiling. The Drop Box is routed via a custom AXI4-Stream bridge in the NoC (Network on Chip) to a dedicated hardware hashing engine.
-* **Zero Backpressure Tolerance:** The hardware FIFO is sized to hold 32 full 384-byte parcels. If the Guest saturates the FIFO, the AXI interconnect instantly returns a `SLVERR` (Slave Error), triggering an immediate **Realm Abort (Guillotine).**
-* **The Plasma Shield & Seal:** The Drop Box memory is flagged with the Execute-Never (XN) bit. The perimeter is physically locked via **Memory Tagging Extension (MTE)**. If the Guest causes a buffer overflow, the physical tag shatters, triggering **immediate Realm vaporization.**
+- **Functional verification:** complete integrated simulation of the full design — all checks passing.
+- **Synthesis:** the whole design has been run through logic synthesis (Yosys) — 114,210 cells for the complete chip in a single run. Per-module fine mapping is in progress.
+- **Not yet:** the design has not been placed and routed, and it has not been fabricated. GAP is a verified design on the road to silicon — not a finished chip, and not claimed as one.
 
-### 6. HUMAN-IN-THE-LOOP & CRYPTOGRAPHIC AUTHORIZATION
-High-risk actuation requires a real-time, HSM-signed signature. To eliminate compiler endianness leaks, the data parcel is defined as a 384-Byte Packed C-Struct:
+## Fingerprint (SHA-512)
 
-```c
-// 6.1 Explicit C-Struct Layout (V1.1 AXI-Aligned):
-struct GAP_Data_Parcel {
-    uint8_t nonce[8];               // Offset 0, 8 bytes (64-bit alignment)
-    uint8_t key_id[4];              // Offset 8, 4 bytes
-    uint8_t command_id[4];          // Offset 12, 4 bytes
-    uint8_t parameters[256];        // Offset 16, 256 bytes
-    uint8_t realm_measurement[48];  // Offset 272, 48 bytes
-    uint8_t version;                // Offset 320, 1 byte
-    uint8_t policy_zero_tolerance;  // Offset 321, 1 byte
-    uint8_t _padding[62];           // Offset 322, 62 bytes (Dead space)
-}; 
-// Total Size: 384 Bytes. Ensures 6 exact 64-byte AXI cache line bursts.
+The complete specification and source — the GAP V1.2 RTL Handoff (Rev 1.2-R2), the spec resolutions, the trust boundaries, the verification status, and the complete Veracore v1 source — are held privately under the UPAL. The fingerprints below are published as a public, timestamped commitment to that exact body of work. When the bundle is revealed, these hashes will match it byte for byte.
+
+```
+VERACORE v1 — SHA-512 fingerprints — 2026-10-20
+Bundle (393,611 bytes): ade43b029ce93823366b65bd75d5949627bcf86c2346397bdb9981fa0c8908b52fe4806d4f9d2ffaf5b430e9f5d455f3994b2953f6dbdbddd906654850431c60
+- GAP V1.2 RTL Handoff Spec Rev 1.2-R2 (PDF): ac9b373a5607131ae44c8e998a5d3092e51d2b70c0ce9e5fd9f1a2a6c43ca83f112693745269da99844ec5c32573331956d42343206d781734b4b2c2b313874b
+- SPEC_GAP_RESOLUTIONS.md: 8eb5ce0678cc05a888ac099fcbb2742d756e9dfebf9e3edb079730b5e376560b98c2157df25abe46465833cfa68b86fe932942b17f2febca36052fe3d6eaa276
+- TRUST_BOUNDARIES.md: 90fdc9777e18f51947619020f1db2e9214ca6904e1c6358236a9371a0b23654365eee342f4abb40305e8cc9d748f68884fa3c720ad5e2420f53e43c345b51dfd
+- VERIFICATION_STATUS.md: 15b4e94b0a9b50abc810c29c6726e9dadc02d6f8e86d8e049175c5055640c222efa4e6009693465f86fd16f7647c19e94171d6dfcee62e3e396cf6bce772a0da
+- VERACORE_V1_COMPLETE_SOURCE.txt: fdb61650f89371bcafd2bdfc416017240176952a9ac6aad81ffac6775332151324a1d6dbd8aa6b405867c19f506b716b16c8c58c2c097250e427ef9c5df3cfe0
+```
+
+## License
+
+GAP is proprietary architecture, offered under the Universal Proprietary Architecture License (UPAL) v5.2.0: personal, non-commercial research and evaluation only. Commercial use and use by entities require a separate license.
+
+The GAP architecture is the subject of a pending U.S. patent application (No. 64/047,130, filed April 23, 2026). The Veracore v1 RTL implementation — the standalone-silicon realization of that architecture — will be covered by its own filing.
+
+© Alexander Dylan Philip Colclough. All rights reserved.
